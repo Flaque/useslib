@@ -15,7 +15,7 @@ useslib fuzzboing
 
 ## Warning
 
-`pkg-lib` probably won't work on every system and I've only tested it so far on macOS. It's probably not a good idea to use this for everything. If you find issues with the project on other OS's please let me know.
+`pkg-config` probably won't work on every system and I've only tested it so far on macOS. It's probably not a good idea to use this for everything. If you find issues with the project on other OS's please let me know.
 
 ## Installation
 

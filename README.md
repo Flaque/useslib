@@ -13,6 +13,19 @@ useslib fuzzboing
 ^~~~~~~
 ```
 
+Without `useslib`, a `@[Lib("imagemagick")]` call will throw an error like this: 
+
+```
+ld: library not found for -lMagickWand
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Error: execution of command failed with code: 1: `cc "${@}" -o '/Users/flaque/.cache/c
+rystal/crystal-run-webimg.tmp'  -rdynamic  -lMagickWand -lpcre -lgc -lpthread /usr/loc
+al/Cellar/crystal-lang/0.24.2_1/src/ext/libcrystal.a -levent -liconv -ldl -L/usr/lib -
+L/usr/local/lib`
+```
+
+That's a lot harder to figure out. 
+
 ## Warning
 
 `pkg-config` probably won't work on every system and I've only tested it so far on macOS. It's probably not a good idea to use this for everything. If you find issues with the project on other OS's please let me know.
